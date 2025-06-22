@@ -8,6 +8,7 @@ const withdrawalRoutes = require('./routes/withdrawRoutes');
 const onboardingRoutes = require('./routes/onboarding');
 const adminRoutes = require('./routes/adminRoutes');
 const promoCodeRoutes = require('./routes/promoCodeRoutes');
+const offerwallRoutes = require('./routes/offerwallRoutes');
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use('/api/onboarding', onboardingRoutes);
 
 app.use('/api/admin', adminRoutes);
 app.use('/api/promocodes', promoCodeRoutes);
+app.use('/api/offerwall', offerwallRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
