@@ -14,7 +14,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: process.env.CLIENT_URL || 'https://reblexfront.vercel.app',
+  origin: process.env.CLIENT_URL || 'https://reblex-f.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
 
